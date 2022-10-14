@@ -1,0 +1,25 @@
+@import 'base/base';
+
+// import abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// import utils
+@import 'utils/utils';
+
+// import layout
+@import 'layout/grid';
+
+// import components
+
+@import 'components/header';
+@import 'components/tabscontent';
+@import 'components/sidebarleft';
+@import 'components/sidebarright';
+@import 'components/selectednews';
+@import 'components/newsdetails';
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.maateen.me/solaiman-lipi/font.css');
+}

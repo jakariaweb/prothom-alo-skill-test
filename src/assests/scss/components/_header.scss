@@ -1,0 +1,10 @@
+$box-shadow-color: 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+.main-header {
+  text-align: center;
+  box-shadow: $box-shadow-color;
+}
+.main-logo img {
+  width: 30vh;
+  height: 10vh;
+}

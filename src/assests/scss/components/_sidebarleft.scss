@@ -1,0 +1,24 @@
+.sidebar_left {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  & {
+    &_tabs {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      margin: 0 8px;
+    }
+  }
+  &_news_tabs {
+    font-size: 18px;
+    font-family: 'SolaimanLipi', sans-serif;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+  }
+  &_news_tabs_active {
+    background-color: #eee;
+    border-bottom: 3px solid #c82641;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}

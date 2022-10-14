@@ -1,0 +1,50 @@
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: 0 0 calc(100% / 12) * $i;
+    width: calc(100% / 12) * $i;
+  }
+  @include responsive(970px) {
+    .col-3 {
+      flex: 0 0 40%;
+      width: 100%;
+    }
+    .col-6 {
+      flex: 0 0 60%;
+      width: 100%;
+    }
+  }
+
+  @include responsive(610px) {
+    .col-3 {
+      flex: 1 45% !important;
+      width: 100%;
+    }
+    .container {
+      padding: 5px !important;
+    }
+  }
+
+  @include responsive(500px) {
+    .col-3 {
+      flex: 0 1 100% !important;
+      width: 100%;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@include responsive(525px) {
+  .home_bottom_ads {
+    width: 100%;
+    height: 100px;
+    padding: 0px 5px;
+  }
+  .small_screen_sidebar_advert {
+    width: 100%;
+    height: 250px !important;
+  }
+}

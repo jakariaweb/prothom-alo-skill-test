@@ -1,0 +1,26 @@
+.news_left_content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 10px 8px 10px 10px;
+
+  &_number {
+    font-size: 30px;
+    color: #666 !important;
+    font-weight: 600;
+  }
+  &_heading {
+    margin-bottom: 5px;
+  }
+  &_heading_left_main {
+    color: #d60000;
+  }
+  &_link {
+    text-decoration: none;
+  }
+  &_link:visited {
+    color: inherit;
+  }
+}
+
+.news_left_content:last-of-type {
+  border-bottom: none;
+}

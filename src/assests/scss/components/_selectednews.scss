@@ -1,0 +1,116 @@
+.selected_news {
+  margin: 0px 10px;
+  &_heading_text {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+    padding: 5px;
+  }
+  &_selected_dot {
+    width: 20px;
+    height: 20px;
+    background-color: #0573e6;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+
+  &_thumb {
+    overflow: hidden;
+    display: inline-block;
+  }
+  &_thumb:hover img {
+    transform: scale(1.2);
+    transform-origin: 50% 50%;
+  }
+  &_thumb_img {
+    display: block;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100%;
+    height: auto;
+  }
+  &_thum_heading_main {
+    position: relative;
+    top: -75px;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+  }
+  &_thumb_heading {
+    font-size: 18px;
+    color: #fff;
+  }
+  &_thumb_heading_text {
+    margin-left: 20px;
+  }
+
+  &_thumb_main:hover &_thumb_heading_text {
+    color: #ffb300 !important;
+  }
+
+  &_sub_thum_content {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 10px 0px 0;
+  }
+  &_sub_thum_content:last-of-type {
+    border-right: none;
+    padding: 0 0px 0px 10px;
+  }
+  &_sub_content img {
+    width: 100%;
+    height: auto;
+  }
+  &_sub_thumb_heading {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  &_sub_thumb_heading_text {
+    color: #d60000;
+  }
+
+  @include responsive(970px) {
+    &_sub_thum_content {
+      border-right: none;
+    }
+    &_sub_thum_content:last-of-type {
+      padding-left: 0;
+    }
+  }
+  @include responsive(715px) {
+    &_thumb_heading_text {
+      font-size: 14px;
+    }
+    &_thum_heading_main {
+      top: -55px;
+    }
+  }
+  @include responsive(610px) {
+    &_thumb_heading_text {
+      font-size: 12px;
+      margin-left: 7px;
+    }
+    &_thum_heading_main {
+      top: -40px;
+    }
+  }
+  @include responsive(525px) {
+    &_thumb_heading_text {
+      font-size: 10px;
+      margin-left: 7px;
+    }
+    &_thum_heading_main {
+      top: -40px;
+    }
+  }
+}
+
+@include responsive(970px) {
+  .col-6 {
+    flex: 1 50%;
+    width: 100%;
+  }
+}
